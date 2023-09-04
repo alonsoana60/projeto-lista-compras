@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(248, 230, 221);
+}
+
+/*TITULO E BOTOES */
+#container {
+  border-radius: 10px;
+  height: 10em;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  font-style: italic;
+  color: black;
+}
+
+.inputs-iniciais {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#produto {
+  width: 30em;
+  height: 2.4em;
+  margin-right: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+#qntd {
+  width: 5em;
+  height: 2.4em;
+  margin-right: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+#un_medida {
+  width: 10em;
+  height: 2.5em;
+  margin-right: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn_produto {
+  width: 10em;
+  height: 2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #646464;
+  color: white;
+  cursor: pointer;
+}
+
+.btn_produto:hover {
+  background-color: #929292;
+  color: white;
+}
+
+/* LISTA */
+
+.lista-produtos {
+  border-radius: 10px;
+  padding: 10px 0px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.li_inputs {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.produto-template {
+  list-style: none;
+  background-color: white;
+  width: 55em;
+  height: 2em;
+  border-radius: 3px;
+  padding-top: 5px;
+  margin: 0px 2em;
+}
+
+.btn_trash {
+  background-color: transparent;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+  padding-top: 5px;
+  align-items: end;
+}
+
+.trash {
+  fill: black;
+}
+
+li:has(input[type="checkbox"]:checked) {
+  text-decoration: line-through;
+  background-color: rgb(205, 245, 205);
+}
